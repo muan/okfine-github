@@ -6,10 +6,6 @@ function init() {
     el.removeAttribute('data-hovercard-url')
   }
 
-  for (const el of document.querySelectorAll('.js-sticky')) {
-    el.classList.remove('js-sticky')
-  }
-
   const prHeader = document.querySelector('.js-pull-header-details')
   if (prHeader) {
     for (const el of prHeader.querySelectorAll('.commit-ref > a, .head-ref > a, .base-ref > a')) {
